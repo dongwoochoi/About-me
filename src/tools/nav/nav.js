@@ -1,30 +1,55 @@
 import './nav.css'
 import Modal from '../contact/contact';
 import React, { useState } from 'react';
+import { IoMdSend, IoIosAirplane, IoIosAlarm, IoIosAnalytics, IoIosAperture, IoIosColorPalette, IoIosClose } from "react-icons/io";
 
 function Nav(){
-    const [modalOpen, setModalOpen] = useState(false);
-    const openModal = () => {
-        setModalOpen(true);
-    };
-    const closeModal = () => {
-        setModalOpen(false);
-    };
+    let [btnstate, set_btnstate] = useState("");
     return(
-        <div className="nav_main">
-            <h2 className="logo">Logo</h2>
-            <nav className="navigation">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skill</a>
-                <a href="#">Activities</a>
-                <button onClick={openModal} className="contact_button">Contact</button>
-            </nav>
-            <Modal open={modalOpen} close={closeModal} header="Modal heading">
-                {/* // Modal.js <main> {props.children} </main>에 내용이 입력된다. 리액트 함수형 모달
-                팝업창입니다. 쉽게 만들 수 있어요. 같이 만들어봐요! */}
-            </Modal>
+        <div className='nav_app'>
+            <div className="nav_main">
+                <h2 className="logo">About_Me</h2>
+                <nav className="navigation">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Skill</a>
+                    <a href="#">Activities</a>
+                    <button onClick={()=>{
+                        set_btnstate("active");
+                    }} className="contact_button">Contact</button>
+                </nav>
+            </div>
+            <div className='second'>
+                <div className={'contact_me' +" "+ btnstate}>
+                    <span onClick={()=> {
+                        set_btnstate("")
+                    }} className='close_btn'><IoIosClose></IoIosClose></span>
+                    <div className='form_box contact_box'>
+                        <h2>Contact Me</h2>
+                        <form action='#'>
+                            <div className='input_box'>
+                                <h3>Comment to me</h3>
+                                <span className='icon'><IoMdSend></IoMdSend></span>
+                                <input type="comment" required></input>
+                                <label>Comment</label>
+                            </div>
+                            <div className='links_box'>
+                                <h3>My Links!</h3>
+                                <span className='icon'>
+                                    <IoMdSend></IoMdSend>
+                                    <IoIosAlarm></IoIosAlarm>
+                                    <IoIosAnalytics></IoIosAnalytics>
+                                    <IoIosAperture></IoIosAperture>
+                                    <IoIosColorPalette></IoIosColorPalette>
+                                    <IoIosAirplane></IoIosAirplane>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
+        
     );
 }
 export default Nav;
