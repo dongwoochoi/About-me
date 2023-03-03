@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom'
 import Main from './page/main/main';
 import Nav from './tools/nav/nav';
+
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
       </Routes>
       <Nav></Nav>
       <Main></Main>
+      
     </div>
   );
 }
