@@ -7,7 +7,7 @@ import { useSelector } from "react-redux"
 function Text(){
     let page_state = useSelector((state) => { return state } )
     return(
-        <div className={"text_main" + page_state.btn_state[0]}>
+        <div className={"text_main"+ page_state.btn_state[0]}>
             <Main_text1/>
             <Main_text2/>
             <Main_text3/>

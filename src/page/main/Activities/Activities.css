@@ -1,9 +1,12 @@
 .activities_main{
+    position: absolute;
+    display: flex;
     width: 100%;
-    height: auto;
     transform: scale(0);
 }
 
-.activities_main .active{
+.activities_mainactive{
+    height: 100px;
+    background: rgb(189, 210, 229);
     transform: scale(1);
 }

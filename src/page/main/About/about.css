@@ -1,9 +1,12 @@
 .about_main{
+    position: absolute;
     width: 100%;
     height: auto;
     transform: scale(0);
 }
 
-.about_main .active{
+.about_mainactive{
+    height: 100px;
+    background: rgb(189, 210, 229);
     transform: scale(1);
 }
