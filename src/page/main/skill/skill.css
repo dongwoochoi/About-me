@@ -1,4 +1,9 @@
 .skill_main{
     width: 100%;
-    height: 800px;
+    height: auto;
+    transform: scale(0);
+}
+
+.skill_main .active{
+    transform: scale(1);
 }

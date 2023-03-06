@@ -3,9 +3,11 @@ import Main_text2 from './main_text2';
 import Main_text3 from './main_text3';
 import Main_text4 from './main_text4';
 import './text.css'
+import { useSelector } from "react-redux"
 function Text(){
+    let page_state = useSelector((state) => { return state } )
     return(
-        <div className="text_main">
+        <div className={"text_main" + page_state.btn_state[0]}>
             <Main_text1/>
             <Main_text2/>
             <Main_text3/>

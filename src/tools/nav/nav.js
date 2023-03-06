@@ -1,19 +1,31 @@
 import './nav.css'
 import Modal from '../contact/contact';
 import React, { useState } from 'react';
+import { useDispatch, useSelector } from "react-redux";
 import { IoMdSend, IoIosAirplane, IoIosAlarm, IoIosAnalytics, IoIosAperture, IoIosColorPalette, IoIosClose } from "react-icons/io";
+import { Activities_on, Skill_on, Home_on, About_on } from '../../store';
 
 function Nav(){
+    let dispatch = useDispatch();
     let [btnstate, set_btnstate] = useState("");
+    let page_state = useSelector((state) => { return state } )
     return(
         <div className='nav_app'>
             <div className="nav_main">
                 <h2 className="logo">About_Me</h2>
                 <nav className="navigation">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Skill</a>
-                    <a href="#">Activities</a>
+                    <a onClick={()=>{ 
+                        dispatch(Home_on());
+                     }} href="#">Home</a>
+                    <a onClick={()=>{ 
+                        dispatch(About_on());
+                     }} href="#">About</a>
+                     <a onClick={()=>{ 
+                        dispatch(Skill_on());
+                     }} href="#">Skill</a>
+                     <a onClick={()=>{ 
+                        dispatch(Activities_on());
+                     }} href="#">Activities</a>
                     <button onClick={()=>{
                         set_btnstate("active");
                     }} className="contact_button">Contact</button>

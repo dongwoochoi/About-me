@@ -29,3 +29,13 @@
     position: relative;
     animation: fadeInUp 3s;
 }
+
+.text_main{
+    width: 100%;
+    height: auto;
+    transform: scale(0);
+}
+
+.text_main .active{
+    transform: scale(1);
+}

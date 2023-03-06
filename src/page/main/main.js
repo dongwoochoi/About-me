@@ -10,6 +10,8 @@ function Main(){
         <div className="main_main">
             <Text></Text>
             <About></About>
+            <Skill></Skill>
+            <Activities></Activities>
         </div>
     );
 }
