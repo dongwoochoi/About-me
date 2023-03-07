@@ -3,7 +3,7 @@ import Modal from '../contact/contact';
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { IoMdSend, IoIosAirplane, IoIosAlarm, IoIosAnalytics, IoIosAperture, IoIosColorPalette, IoIosClose } from "react-icons/io";
-import { Activities_on, Skill_on, Home_on, About_on } from '../../store';
+import { Home_on, Activities_on, Skill_on, About_on, Introduce_on } from '../../store';
 
 function Nav(){
     let dispatch = useDispatch();
@@ -12,11 +12,13 @@ function Nav(){
     return(
         <div className='nav_app'>
             <div className="nav_main">
-                <h2 className="logo">About_Me</h2>
+                <h2 onClick={()=>{ 
+                        dispatch(Home_on());
+                     }}className="logo">About_Me</h2>
                 <nav className="navigation">
                     <a onClick={()=>{ 
-                        dispatch(Home_on());
-                     }} href="#">Home</a>
+                        dispatch(Introduce_on());
+                     }} href="#">Introduce</a>
                     <a onClick={()=>{ 
                         dispatch(About_on());
                      }} href="#">About</a>

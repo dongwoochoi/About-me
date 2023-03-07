@@ -1,4 +1,4 @@
-import './main.css'
+import './main.css';
 import Text from './Text/Text';
 import About from './About/about';
 import Skill from './skill/skill';
@@ -9,6 +9,7 @@ function Main(){
     return(
         <div className="main_main">
             <Text></Text>
+            <Introduce></Introduce>
             <About></About>
             <Skill></Skill>
             <Activities></Activities>
