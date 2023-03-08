@@ -1,12 +1,25 @@
 .activities_main{
+    margin-top: 15px;
     position: absolute;
+    width: 85%;
+    height: 80%;
     display: flex;
-    width: 100%;
-    transform: scale(0);
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    transition: 2s ease;
 }
 
-.activities_mainactive{
-    height: 100px;
-    background: rgb(189, 210, 229);
-    transform: scale(1);
+.activities_main.active{
+    transform: scale(1) !important;
+   
 }
+
+.activities_main.off{
+    transform: scale(0) !important;
+  }

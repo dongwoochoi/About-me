@@ -2,23 +2,23 @@ import { configureStore, createSlice } from '@reduxjs/toolkit'
 
 let btn_state = createSlice({
     name : 'about_state',
-    initialState : ["active","","","",""],
+    initialState : ["active","off","off","off","off"],
     reducers : {
       //changeName은 마음대로 작명 가능
       Home_on(state){
-        return ["active","","","",""]
+        return ["active","off","off","off","off"]
       },
       Introduce_on(state){
-        return ["","active","","",""]
+        return ["off","active","off","off","off"]
       },
       About_on(state){
-        return ["","","active","",""]
+        return ["off","off","active","off","off"]
       },
       Skill_on(state){
-        return ["","","","active",""]
+        return ["off","off","off","active","off"]
       },
       Activities_on(state){
-        return ["","","","","active"]
+        return ["off","off","off","off","active"]
       }
     }
   })

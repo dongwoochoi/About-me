@@ -1,9 +1,10 @@
 import './about.css'
 import { useSelector } from "react-redux"
+import '../../../App.css'
 function About(){
     let page_state = useSelector((state) => { return state } )
     return(
-        <div className={"about_main" + page_state.btn_state[2]}>
+        <div className={"about_main " + page_state.btn_state[2]}>
             About
         </div>
     );

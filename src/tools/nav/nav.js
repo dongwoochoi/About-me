@@ -12,9 +12,9 @@ function Nav(){
     return(
         <div className='nav_app'>
             <div className="nav_main">
-                <h2 onClick={()=>{ 
+                <a href='/'><h2 onClick={()=>{ 
                         dispatch(Home_on());
-                     }}className="logo">About_Me</h2>
+                     }}className="logo">About_Me</h2></a>
                 <nav className="navigation">
                     <a onClick={()=>{ 
                         dispatch(Introduce_on());
