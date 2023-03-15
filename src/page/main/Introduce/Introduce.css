@@ -11,10 +11,25 @@
     border-radius: 20px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    overflow: hidden;
+    overflow-y: scroll;
     transition: 2s ease;
-    
 }
+
+.introduce_main::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+.introduce_main::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #217af4; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+.introduce_main::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+}
+
 
 .introduce_main.active{
     transform: scale(1) !important;

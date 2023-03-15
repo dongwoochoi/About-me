@@ -11,9 +11,27 @@
     border-radius: 20px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
     transition: 2s ease;
 }
+
+.skill_main::-webkit-scrollbar {
+    width: 10px;
+}
+
+.skill_main::-webkit-scrollbar-thumb {
+    height: 50% !important;
+    border: 5px solid transparent;
+    background: white; 
+    border-radius: 10px;
+}
+
+.skill_main::-webkit-scrollbar-track {
+    height: 8px;
+    background: transparent;  /*스크롤바 뒷 배경 색상*/
+}
+
 
 .skill_main.active{
     transform: scale(1) !important;
