@@ -5,47 +5,6 @@ function Skill(){
     return(
         <div className={"skill_main "+ page_state.btn_state[3]}>
             Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
-            Skill<br/>
         </div>
     );
 }

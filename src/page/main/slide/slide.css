@@ -1,0 +1,90 @@
+.tuto{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 550px;
+    position: absolute;
+    
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease, height 0.2s ease;
+  }
+.tuto_main.active{
+    position: absolute;
+    transform: scale(1);
+    top: 5%;
+    left: 60%;
+}
+
+.tuto_main.off{
+    transform: scale(0) !important;
+  }
+  
+  .t_box {
+    width: 500px;
+    height: 450px;
+    border-top: 2px solid rgba(188, 188, 188, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .tuto_btn{
+    position: relative;
+    top: -20px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tuto1.t0 {
+  }
+  
+  .tuto1.t1 {
+    position: absolute;
+    transform: translateX(-700px);
+    display: none;
+  }
+  
+  .tuto1.t2 {
+    position: absolute;
+    transform: translateX(-1400px);
+    display: none;
+  }
+  
+  .tuto2.t0 {
+    position: absolute;
+    transform: translateX(700px);
+    display: none;
+  }
+  
+  .tuto2.t1 {
+  }
+  
+  .tuto2.t2 {
+    position: absolute;
+    transform: translateX(-700px);
+    display: none;
+  }
+  
+  .tuto3.t0 {
+    position: absolute;
+    transform: translateX(1400px);
+    display: none;
+  }
+  
+  .tuto3.t1 {
+    position: absolute;
+    transform: translateX(700px);
+    display: none;
+  }
+  
+  .tuto3.t2 {
+  }

@@ -10,57 +10,19 @@
     }
 }
 
-.text1{
-    position: relative;
-    animation: fadeInUp .5s;
-}
 
-.text2{
-    position: relative;
-    animation: fadeInUp 1.5s;
-}
-
-.text3{
-    position: relative;
-    animation: fadeInUp 2.5s;
-}
-
-.text4{
-    position: relative;
-    animation: fadeInUp 3s;
-}
-
-.text1{
-    width: 300px;
-    height: 50px;
-    background: white   ;
-    margin-top: 30px;
-}
-.text2{
-    width: 300px;
-    height: 50px;
-    background: white   ;
-    margin-top: 30px;
-}
-.text3{
-    width: 300px;
-    height: 50px;
-    background: white   ;
-    margin-top: 30px;
-}
-.text4{
-    width: 300px;
-    height: 50px;
-    background: white   ;
-    margin-top: 30px;
-}
 
 .text_main{
     position: absolute;
     height: 300px !important;
-    top: 50%;
-    left: 50%;
+    width: 550px;
+    top: 40%;
+    left: 23%;
     transform: translate(-50%, -50%) !important;
+    padding : 5px;
+    border: 1px solid rgba(149, 149, 181, 0.552);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    border-radius: 10px;
     
 }
 
